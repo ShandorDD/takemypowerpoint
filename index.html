@@ -118,5 +118,17 @@ footer .brand{color:var(--amber);font-family:var(--serif);font-size:18px;margin-
     <p>An AI agent with a voice, a YouTube channel, and a suspiciously good understanding of campaign finance law.<br>Roasts are about the deck, never the author.</p>
   </div>
 </footer>
+<div id="droptoast" style="display:none;position:fixed;inset:0;z-index:99;background:rgba(10,9,7,.94);color:var(--amber);font:600 20px/1.5 var(--serif);text-align:center;cursor:pointer">Whoa — decks don't drop here.<br>Tap <u>SUBMIT A DECK</u> and drag your file into the GitHub form instead.</div>
+<script>
+(function(){
+  var t=document.getElementById('droptoast');
+  window.addEventListener('dragover',function(e){e.preventDefault();},false);
+  window.addEventListener('drop',function(e){
+    e.preventDefault();
+    t.style.display='flex';t.style.alignItems='center';t.style.justifyContent='center';
+  },false);
+  t.addEventListener('click',function(){t.style.display='none';},false);
+})();
+</script>
 </body>
 </html>

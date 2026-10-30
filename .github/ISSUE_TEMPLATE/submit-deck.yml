@@ -6,7 +6,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        **Attach your deck:** drag the `.pptx` or `.pdf` file directly into the text box below (GitHub allows attachments up to ~25 MB). Then fill in the fields and submit.
+        **Attach your deck:** drag the `.pptx` or `.pdf` file (up to ~25 MB) straight into the text box below. If the box refuses to take the file, no problem — hit Submit first, then drag the deck into a **comment** on your new issue. aiFrado checks both, every 30 minutes.
 
         Your roast arrives as an **unlisted YouTube link** — public only if you approve it.
   - type: input

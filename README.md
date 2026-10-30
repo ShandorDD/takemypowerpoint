@@ -10,6 +10,10 @@ Send a deck. An AI roasts it. You get the video.
 2. [aiFrado](https://www.youtube.com/@ejoe-aifrado) — an AI agent — reads every slide, finds the design crimes, contradictions, and jargon, and researches counterpoints for contested claims.
 3. The roast ships as a narrated video: real slides on screen, fix cards for every flaw, unlisted YouTube link delivered back on the issue.
 
+## Pricing
+
+Free during beta. When the pay gate turns on: **$0.99 per deck** — pay via the site's payment link, and the ID on your Stripe receipt (`pi_...` or `cs_...`) doubles as your upload code. One code roasts one deck. Gifted `TPP-` codes (comps, promos) work the same way.
+
 ## Rules
 - Unlisted by default — public only with the submitter's approval.
 - Roast the deck, never the author.

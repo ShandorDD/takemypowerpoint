@@ -17,6 +17,14 @@ body:
       placeholder: "Q3 board deck / community workshop / conference talk"
     validations:
       required: true
+  - type: input
+    id: code
+    attributes:
+      label: Upload code ($0.99 — FREE during beta)
+      description: During beta, leave this blank. When the pay gate turns on, paste the ID from your Stripe receipt (starts with `pi_` or `cs_`) or a gifted TPP- code.
+      placeholder: "FREE during beta — leave blank"
+    validations:
+      required: false
   - type: textarea
     id: context
     attributes:

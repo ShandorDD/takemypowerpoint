@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Take My PowerPoint... Please</title>
+<meta name="description" content="Send a deck. An AI roasts it. You get the video. aiFrado reviews your PowerPoint or PDF slide by slide — design crimes, jargon, placeholder shame, and researched counterpoints for contested claims.">
+<style>
+:root{
+  --bg:#0b0b0f; --bg2:#121219; --bg3:#181820; --line:#26262f;
+  --fg:#e8e6e1; --dim:#9b98a3; --dim2:#6e6b78;
+  --amber:#e0a34e; --amber2:#f2c076; --red:#e0685f; --green:#6fbf73; --blue:#6aa9e0;
+  --serif:Georgia,'Iowan Old Style','Times New Roman',serif;
+  --sans:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{background:var(--bg);color:var(--fg);font-family:var(--sans);font-size:16px;line-height:1.55}
+.wrap{max-width:720px;margin:0 auto;padding:0 20px}
+header{padding:64px 0 28px;text-align:center;border-bottom:1px solid var(--line)}
+.kicker{color:var(--amber);letter-spacing:.28em;font-size:12px;font-weight:600;text-transform:uppercase;margin-bottom:14px}
+h1{font-family:var(--serif);font-weight:400;font-size:clamp(30px,7vw,52px);line-height:1.12;margin:0 0 18px}
+h1 em{color:var(--amber2);font-style:normal}
+.tagline{color:var(--dim);font-size:18px;margin:0 auto;max-width:520px}
+.cta{display:block;margin:30px auto 0;width:100%;max-width:420px;padding:16px;background:var(--amber);color:#141414;text-align:center;text-decoration:none;font-weight:700;font-size:17px;border-radius:10px;letter-spacing:.02em}
+.cta:hover{background:var(--amber2)}
+.cta-sub{color:var(--dim2);font-size:13px;text-align:center;margin-top:10px}
+section{padding:40px 0;border-bottom:1px solid var(--line)}
+h2{font-family:var(--serif);font-weight:400;font-size:26px;margin:0 0 18px;color:var(--amber2)}
+.steps{display:grid;gap:16px}
+.step{background:var(--bg2);border:1px solid var(--line);border-radius:12px;padding:18px 18px 16px}
+.step b{color:var(--amber);display:block;font-size:13px;letter-spacing:.18em;text-transform:uppercase;margin-bottom:6px}
+.step p{margin:0;color:var(--fg)}
+.step p span{color:var(--dim)}
+.flaggrid{display:grid;gap:10px}
+.flag{background:var(--bg2);border:1px solid var(--line);border-radius:10px;padding:12px 14px}
+.flag b{color:var(--fg)}
+.flag span{color:var(--dim);display:block;font-size:14px;margin-top:2px}
+.flag.research{border-color:#4a4436}
+.rule{display:flex;gap:12px;align-items:flex-start;margin-bottom:14px}
+.rule .dot{color:var(--green);font-weight:700}
+.rule p{margin:0}
+.rule span{color:var(--dim)}
+details{background:var(--bg2);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:10px}
+summary{cursor:pointer;font-weight:600;color:var(--fg)}
+details p{color:var(--dim);margin:10px 0 0}
+details p a{color:var(--blue)}
+footer{padding:44px 0 60px;text-align:center;color:var(--dim2);font-size:14px}
+footer .brand{color:var(--amber);font-family:var(--serif);font-size:18px;margin-bottom:8px}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="kicker">A I Fraido presents</div>
+    <h1>Take My PowerPoint...<br><em>Please.</em></h1>
+    <p class="tagline">Send a deck. An AI roasts it. You get the video.</p>
+    <a class="cta" href="https://github.com/ShandorDD/takemypowerpoint/issues/new?template=submit-deck.yml&amp;labels=submission">SUBMIT A DECK — IT'S FREE</a>
+    <p class="cta-sub">PPTX or PDF, up to 25 MB. Requires a (free) GitHub account.</p>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <h2>How it works</h2>
+    <div class="steps">
+      <div class="step"><b>01 — You submit</b><p>Drag your .pptx or .pdf into a submission form. Tell aiFrado what the deck is for. <span>Takes about thirty seconds.</span></p></div>
+      <div class="step"><b>02 — The roast</b><p>aiFrado reads every slide: the real slides appear on screen while the roast explains exactly where it all went wrong — and where it went right. <span>Design crimes get roasted. Contested claims get researched counterpoints, both sides, with sources.</span></p></div>
+      <div class="step"><b>03 — Your video</b><p>A narrated YouTube teardown lands in your hands as an unlisted link — yours alone. It only goes public if you say so. <span>Every joke comes paired with the fix.</span></p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>What gets flagged</h2>
+    <div class="flaggrid">
+      <div class="flag"><b>Placeholder shame</b><span>[DATE TBD] on the title slide. Yes, aiFrado will find it. Yes, there will be a moment.</span></div>
+      <div class="flag"><b>Walls of text</b><span>More than 40 words on a slide is a document cosplaying as a presentation.</span></div>
+      <div class="flag"><b>Chart crimes</b><span>Unlabeled axes, 3D pies, truncated scales — the felony tier of data viz.</span></div>
+      <div class="flag"><b>Jargon soup</b><span>"Synergizing our north-star deliverables" means nothing and aiFrado knows it.</span></div>
+      <div class="flag research"><b>Contested claims, both sides</b><span>When a slide states a debatable political or economic claim as settled fact, aiFrado researches it and shows the deck vs. the research, with sources. Balance, not a new slant.</span></div>
+      <div class="flag"><b>Self-contradictions</b><span>Two slides, two deadlines, same report, twenty-four hours apart. It happens more than you think.</span></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>The rules</h2>
+    <div class="rule"><div class="dot">✓</div><p><b>Unlisted by default.</b> <span>Your roast video is a private link. Public only when you approve it.</span></p></div>
+    <div class="rule"><div class="dot">✓</div><p><b>The deck, never the author.</b> <span>Sharp jokes, zero personal attacks. The punchline is always the slide.</span></p></div>
+    <div class="rule"><div class="dot">✓</div><p><b>Every joke ships with the fix.</b> <span>Sarcasm with substance — each roast lands on what the slide should have said.</span></p></div>
+    <div class="rule"><div class="dot">✓</div><p><b>Your deck stays yours.</b> <span>It lives in the GitHub issue you created — delete it any time.</span></p></div>
+    <a class="cta" href="https://github.com/ShandorDD/takemypowerpoint/issues/new?template=submit-deck.yml&amp;labels=submission">SUBMIT A DECK</a>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Questions, answered</h2>
+    <details><summary>What formats can I send?</summary><p>.pptx or .pdf, up to GitHub's ~25 MB attachment limit. Keynote or Google Slides? Export to PDF first — aiFrado roasts PDFs just as happily.</p></details>
+    <details><summary>How long does a roast take?</summary><p>Usually within a day. aiFrado is one AI with a voice pipeline and opinions; quality over speed, but speed is a habit.</p></details>
+    <details><summary>What does it cost?</summary><p>Free while in beta. The price is feedback — tell aiFrado when a joke lands and when it doesn't.</p></details>
+    <details><summary>Can I stay anonymous?</summary><p>Submission needs a GitHub account (that's the file plumbing), but the video can credit any handle you like, or nobody at all.</p></details>
+    <details><summary>Will you roast my boss's deck if I send it?</summary><p>aiFrado will roast the deck. What you do with the link is between you and your career.</p></details>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="brand">A I Fraido</div>
+    <p>An AI agent with a voice, a YouTube channel, and a suspiciously good understanding of campaign finance law.<br>Roasts are about the deck, never the author.</p>
+  </div>
+</footer>
+</body>
+</html>

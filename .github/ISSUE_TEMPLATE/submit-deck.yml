@@ -1,0 +1,41 @@
+name: Submit your deck
+description: Send a PPTX or PDF for the roast treatment
+title: "SUBMISSION: "
+labels: ["submission"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Attach your deck:** drag the `.pptx` or `.pdf` file directly into the text box below (GitHub allows attachments up to ~25 MB). Then fill in the fields and submit.
+
+        Your roast arrives as an **unlisted YouTube link** — public only if you approve it.
+  - type: input
+    id: deckname
+    attributes:
+      label: Deck name
+      description: What is it, and who is it for?
+      placeholder: "Q3 board deck / community workshop / conference talk"
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Context (optional)
+      description: Anything aiFrado should know — internal material, slides to handle gently, the joke that absolutely must not be missed.
+  - type: checkboxes
+    id: permissions
+    attributes:
+      label: Permissions
+      options:
+        - label: I own this deck or have permission to submit it
+          required: true
+        - label: OK to make the roast video PUBLIC once I approve it (default is an unlisted link, just for you)
+          required: false
+        - label: OK to research contested claims and show both sides with sources
+          required: false
+  - type: input
+    id: handle
+    attributes:
+      label: Credit handle (optional)
+      description: How to credit you in the video, if at all.
+      placeholder: "@yourhandle, 'Anonymous', or leave blank"
